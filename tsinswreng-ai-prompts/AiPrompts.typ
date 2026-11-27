@@ -194,3 +194,24 @@ $"Review-{time}.typ"
 #H[按正常人類的操作行爲][
 	#按正常人類的操作行爲
 ]
+
+#let 想CommitMsg = [
+	幫我想commit msg。
+	直接發出來 不要幫我提交。
+	如果你認爲要分成多個commit 你就
+	````sh
+	cd ...
+	git add aaa
+	git add bbb
+	git commit -m "$(cat <<'EOF'
+		blabla
+	EOF
+	)"
+	......
+	````
+	然後把整段命令貼給我。
+]
+
+#H[想CommitMsg][
+	#想CommitMsg
+]
